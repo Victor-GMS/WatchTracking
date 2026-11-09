@@ -1,0 +1,85 @@
+.estrutura {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho {
+  height: 76px;
+  padding: 0 max(6vw, 24px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #292936;
+  background: #14141e;
+}
+
+.marca {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+  border-radius: 10px;
+  background: #8b5cf6;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.navegacao {
+  display: flex;
+  gap: 28px;
+}
+
+.navegacao a {
+  color: #aaa8bb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navegacao a:hover,
+.navegacao a[aria-current="page"] {
+  color: #fff;
+}
+
+.principal {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+  flex: 1;
+  padding: 48px 0 64px;
+}
+
+.rodape {
+  text-align: center;
+  color: #777588;
+  padding: 24px;
+  border-top: 1px solid #292936;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 520px) {
+  .cabecalho {
+    height: auto;
+    min-height: 70px;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 16px 5%;
+  }
+
+  .navegacao {
+    gap: 16px;
+    font-size: 0.9rem;
+  }
+
+  .principal {
+    padding-top: 32px;
+  }
+}

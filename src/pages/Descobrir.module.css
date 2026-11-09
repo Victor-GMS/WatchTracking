@@ -1,0 +1,88 @@
+.pagina {
+  display: grid;
+  gap: 36px;
+}
+
+.sobretitulo {
+  color: #b69af7;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.cabecalhoPagina h1 {
+  margin: 8px 0;
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
+  letter-spacing: -0.06em;
+}
+
+.cabecalhoPagina p {
+  margin: 0;
+  color: #9b99ac;
+}
+
+.bloco {
+  display: grid;
+  gap: 16px;
+}
+
+.bloco h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.formularioBusca {
+  display: flex;
+  gap: 10px;
+}
+
+.botaoBusca {
+  padding: 0 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #8b5cf6;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botaoBusca:hover {
+  background: #7544e8;
+}
+
+.busca {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #39394b;
+  border-radius: 10px;
+  background: #1a1a26;
+  color: #fff;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+}
+
+.aviso {
+  margin: 0;
+  color: #aaa8bb;
+}
+
+.erro {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid #70404a;
+  border-radius: 10px;
+  background: #2a1a20;
+  color: #ff9caa;
+}
+
+@media (max-width: 500px) {
+  .grade {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

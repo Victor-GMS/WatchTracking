@@ -1,0 +1,113 @@
+.cartao {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  gap: 17px;
+  padding: 14px;
+  border: 1px solid #30303f;
+  background: #1a1a25;
+  border-radius: 15px;
+  min-width: 0;
+}
+
+.cartaz {
+  min-height: 145px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #40305f, #171724 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #c4a7ff;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.cartaz img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cartaz span {
+  font-size: 2rem;
+}
+
+.cartaz small {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+}
+
+.informacoes {
+  min-width: 0;
+}
+
+.linhaTitulo {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.linhaTitulo h3 {
+  margin: 3px 0;
+  font-size: 1.05rem;
+  overflow-wrap: anywhere;
+}
+
+.nota {
+  white-space: nowrap;
+  color: #f6c96b;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.detalhes,
+.data {
+  margin: 7px 0;
+  color: #aaa8bb;
+  font-size: 0.82rem;
+}
+
+.comentario {
+  color: #d0cede;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  margin: 12px 0;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.acoes button {
+  border: 1px solid #55516a;
+  background: #292638;
+  color: #eee;
+  padding: 7px 11px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.acoes .excluir {
+  color: #ff9caa;
+  border-color: #70404a;
+}
+
+@media (max-width: 420px) {
+  .cartao {
+    grid-template-columns: 78px 1fr;
+    padding: 10px;
+    gap: 11px;
+  }
+
+  .cartaz {
+    min-height: 120px;
+  }
+
+  .linhaTitulo {
+    flex-direction: column;
+    gap: 2px;
+  }
+}

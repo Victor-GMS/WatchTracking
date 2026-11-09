@@ -1,0 +1,23 @@
+.filtros {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filtros input,
+.filtros select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #39394b;
+  border-radius: 9px;
+  background: #1a1a26;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .filtros {
+    grid-template-columns: 1fr;
+  }
+}
